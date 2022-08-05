@@ -1,6 +1,5 @@
 import org.junit.jupiter.api.Test;
 import settings.Settings;
-
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
@@ -32,7 +31,6 @@ public class PutTest extends Settings {
         Long id = postTest();
 
         HashMap<String, Object> bodyMap = new HashMap<>();
-
         bodyMap.put("id", id);
         bodyMap.put("name", "doggie2");
 

@@ -29,7 +29,6 @@ public class DeleteTest extends Settings {
     @Test
     void petDeleteTest() {
         Long id = postTest();
-
         given()
         .when()
             .delete("https://petstore.swagger.io/v2/pet/" + id)
